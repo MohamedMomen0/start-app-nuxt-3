@@ -1,0 +1,8 @@
+body {
+  &.rtl {
+    direction: rtl;
+    .v-application {
+      font-family: regularArFont !important;
+    }
+  }
+}

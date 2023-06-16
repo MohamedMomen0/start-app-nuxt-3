@@ -1,0 +1,48 @@
+:root {
+  // =========== START:: THEME COLORS ===========
+  --main: #161521;
+  --anti_main: #fff;
+
+  --body_bg: #f6f6f6;
+  --main_bg: #ffffff;
+  --input_bg: #ffffff;
+
+  --placholder: #aaaaaa;
+  --border: #e6e6e6;
+  --main_shadow: #e1e1e14d;
+  --para: #676767;
+  --gray_color: #a7a7a7;
+
+  &.darkTheme {
+    --main: #fff;
+    --anti_main: #161521;
+
+    --body_bg: #181818;
+    --main_bg: #000;
+    --input_bg: #333;
+
+    --border: #16161682;
+    --main_shadow: #14141440;
+    --para: #fff;
+    --gray_color: #a7a7a7;
+  }
+
+  // ============= Fixed
+  --app_color: #2870f5;
+  --app_color_hover: #0f9af5;
+  // @media (prefers-color-scheme: dark) {
+  //   :root {
+  //   }
+  // }
+  // =========== END:: THEME COLORS ===========
+
+  // =========== START:: BRANDS COLORS ===========
+  --facebook: #4267b2;
+  --twitter: #1da1f2;
+  --whatsApp: #25d366;
+  --telegram: #0088cc;
+  --linkedin: #2867b2;
+  --youtube: #ff0000;
+  --instagram: #e4405f;
+  // =========== END:: BRANDS COLORS ===========
+}

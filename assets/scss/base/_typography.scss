@@ -1,0 +1,147 @@
+// START:: FONT
+@font-face {
+  font-family: light_font;
+  src: url("../fonts/Cairo-Light.ttf");
+}
+@font-face {
+  font-family: regular_font;
+  src: url("../fonts/Cairo-Regular.ttf");
+}
+@font-face {
+  font-family: medium_font;
+  src: url("../fonts/Cairo-Medium.ttf");
+}
+@font-face {
+  font-family: semi_bold_font;
+  src: url("../fonts/Cairo-SemiBold.ttf");
+}
+@font-face {
+  font-family: bold_font;
+  src: url("../fonts/Cairo-Bold.ttf");
+}
+@font-face {
+  font-family: extra_bold_font;
+  src: url("../fonts/Cairo-ExtraBold.ttf");
+}
+// END:: FONT
+
+// Primary Head
+.h_1 {
+  font-size: 4rem;
+  color: var(--main);
+}
+
+// Secondary Head
+.h_2 {
+  font-size: 2.1rem;
+  font-weight: normal;
+
+  &.bold {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
+
+// Heading tertiary
+.h_3 {
+  font-weight: normal;
+}
+
+// Para
+.para {
+  color: var(--para);
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin: 20px 0;
+  font-weight: normal;
+  position: relative;
+
+  &.big {
+    font-size: 1.8rem;
+  }
+
+  &.quotes {
+    img.quotes {
+      position: absolute;
+      top: -38px;
+      left: 0; // RTL
+    }
+  }
+}
+
+.before_bar {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 60%;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(
+      180deg,
+      var(--app_color) 0%,
+      #005291 50%,
+      var(--app_color_hover) 100%
+    );
+  }
+
+  &.white_bar {
+    &::before {
+      background: #fff;
+    }
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+// Colored Span etc..
+.colored {
+  background: -webkit-linear-gradient(
+    90deg,
+    var(--app_color_hover) 0%,
+    #1264b5 50%,
+    var(--app_color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  i {
+    color: var(--app_color) !important;
+  }
+}
+
+.bg_colored {
+  background: var(--app_color);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.underline {
+  text-decoration: underline;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: var(--app_color) !important;
+  }
+}
+
+.iziToast-message {
+  font-family: "Neo Sans Arabic";
+}
+
+body.rtl {
+  .para {
+    &.quotes {
+      img.quotes {
+        left: unset;
+        right: 0;
+      }
+    }
+  }
+}

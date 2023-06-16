@@ -1,0 +1,57 @@
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  margin: 8px;
+  background: var(--body_bg);
+  color: var(--main);
+  font-size: 17px;
+  line-height: 1.7;
+  font-family: "KoHo", sans-serif;
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: unset;
+  }
+
+  img,
+  video {
+    cursor: pointer;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  video {
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  #nprogress {
+    .bar {
+      height: 4px;
+      background-color: var(--app_color);
+
+      .peg {
+        box-shadow: 0 0 10px var(--app_color), 0 0 5px var(--app_color);
+      }
+    }
+    .spinner {
+      .spinner-icon {
+        border-top-color: var(--app_color);
+        border-left-color: var(--app_color);
+      }
+    }
+  }
+}
