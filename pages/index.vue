@@ -1,6 +1,6 @@
 <template>
   <div class="div">
-    <h1>index page</h1>
+    <h2>index page</h2>
     <NuxtLink to="/authentication/login">Login</NuxtLink> |
     <NuxtLink to="/policy">policy</NuxtLink>
     <v-btn color="primary">lol</v-btn>
